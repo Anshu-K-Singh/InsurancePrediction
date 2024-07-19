@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block title %}About us{% endblock %}
+{% block content %}
+<style>
+    /* Transition effects for cards */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Transition effects for images */
+    .card-img-top {
+        transition: transform 0.3s ease;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="mb-4">About Us</h1>
+    <p class="lead mb-4">Learn more about our mission, vision, and the team that makes it all happen.</p>
+
+    <div class="row">
+        <!-- About Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Our Mission</h5>
+                </div>
+                <div class="card-body">
+                    <p>We strive to deliver innovative solutions that make life easier and better. Our mission is to create high-quality products that meet the needs of our customers and exceed their expectations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Our Vision</h5>
+                </div>
+                <div class="card-body">
+                    <p>Our vision is to be a leader in our industry by fostering a culture of excellence, creativity, and collaboration. We aim to continuously improve and innovate to provide the best services and products to our clients.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Team Section -->
+        <div class="col-md-12">
+            <h2 class="mb-4">Meet the Team</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-light">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">CEO</p>
+                            <p class="card-text">John leads the team with a vision to innovate and excel. With over 20 years of experience, he drives the company towards achieving its goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-light">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">CTO</p>
+                            <p class="card-text">Jane oversees the technology and innovation strategy, ensuring that we stay ahead in a competitive market. Her expertise drives our tech advancements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-light">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Emily Johnson</h5>
+                            <p class="card-text">Marketing Manager</p>
+                            <p class="card-text">Emily crafts strategies that connect our products with customers. Her creative approach helps build our brand and expand our reach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
